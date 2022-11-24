@@ -1,0 +1,99 @@
+html {
+    background-image: linear-gradient(109.6deg, #4f4f4d 11.2%, #a58836 57.8%, #5c585c 85.9%);
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .container {
+    width: 210px;
+    height: 140px;
+    position: relative;
+    perspective: 1000px;
+    padding: 100px 0 0 0;
+    margin: auto;
+  }
+  .container .carousel {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+  }
+  .container .carousel img {
+    margin: 0;
+    display: block;
+    position: absolute;
+    width: 160px;
+    height: 130px;
+    left: 10px;
+    top: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 7px 0px #3f3f3f;
+  }
+  .container .carousel img:nth-of-type(1) {
+    transform: rotateY(0deg) translateZ(288px);
+    top: 90px;
+    background-color: rgba(255, 0, 0, 0.6);
+  }
+  .container .carousel img:nth-of-type(2) {
+    transform: rotateY(40deg) translateZ(288px);
+    top: 91px;
+    background-color: rgba(255, 170, 0, 0.6);
+  }
+  .container .carousel img:nth-of-type(3) {
+    transform: rotateY(80deg) translateZ(288px);
+    top: 92px;
+    background-color: rgba(170, 255, 0, 0.6);
+  }
+  .container .carousel img:nth-of-type(4) {
+    transform: rotateY(120deg) translateZ(288px);
+    top: 93px;
+    background-color: rgba(0, 255, 0, 0.6);
+  }
+  .container .carousel img:nth-of-type(5) {
+    transform: rotateY(160deg) translateZ(288px);
+    top: 94px;
+    background-color: rgba(0, 255, 170, 0.6);
+  }
+  .container .carousel img:nth-of-type(6) {
+    transform: rotateY(200deg) translateZ(288px);
+    top: 95px;
+    background-color: rgba(0, 170, 255, 0.6);
+  }
+  .container .carousel img:nth-of-type(7) {
+    transform: rotateY(240deg) translateZ(288px);
+    top: 96px;
+    background-color: rgba(0, 0, 255, 0.6);
+  }
+  .container .carousel img:nth-of-type(8) {
+    transform: rotateY(280deg) translateZ(288px);
+    top: 97px;
+    background-color: rgba(170, 0, 255, 0.6);
+  }
+  .container .carousel img:nth-of-type(9) {
+    transform: rotateY(320deg) translateZ(288px);
+    top: 90px;
+    background-color: rgba(255, 0, 170, 0.6);
+  }
+  .container .carousel img:last-of-type {
+    border-radius: 50% !important;
+    height: 90px !important;
+    object-fit: cover;
+  }
+  
+  button {
+    cursor: pointer;
+    color: darkorange;
+    background: none;
+    border: none;
+    display: inline-block;
+    position: absolute;
+    top: 55%;
+    font-size: 30px;
+  }
+  button.prev {
+    left: 3%;
+  }
+  button.next {
+    right: 3%;
+  }
